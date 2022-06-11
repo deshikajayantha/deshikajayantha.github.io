@@ -36632,13 +36632,13 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 112px;
+  min-height: 78px;
 }
 
 .u-header .u-image-1 {
-  width: 200px;
-  height: 80px;
-  margin: 16px auto 16px 0;
+  width: 64px;
+  height: 64px;
+  margin: 5px auto 0 0;
 }
 
 .u-header .u-logo-image-1 {
@@ -36646,9 +36646,56 @@ a.u-link.u-text-hover-grey-90:hover {
   height: 100%;
 }
 
+.u-header .u-text-1 {
+  font-size: 1.5rem;
+  font-family: "Black Han Sans";
+  margin: -49px auto 0 73px;
+}
 
+.u-header .u-menu-1 {
+  margin: -37px 0 21px auto;
+}
 
+.u-header .u-nav-1 {
+  font-size: 1rem;
+  letter-spacing: 0px;
+}
 
+.u-header .u-nav-2 {
+  font-size: 1.25rem;
+}
+@media (max-width: 1199px) {
+  .u-header .u-menu-1 {
+    width: auto;
+    margin-top: -39px;
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 991px) {
+  .u-header .u-sheet-1 {
+    min-height: 74px;
+  }
+
+  .u-header .u-menu-1 {
+    margin-top: -35px;
+    margin-bottom: 19px;
+  }
+}
+@media (max-width: 767px) {
+  .u-header .u-menu-1 {
+    margin-top: -38px;
+    margin-bottom: 22px;
+  }
+}
+@media (max-width: 575px) {
+  .u-header .u-text-1 {
+    font-size: 1.25rem;
+  }
+
+  .u-header .u-menu-1 {
+    margin-top: -32px;
+  }
+}
  .u-footer {
   background-image: none;
 }
