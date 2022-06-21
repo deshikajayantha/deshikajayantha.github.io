@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sri Lanka vs Australia 4th ODI Live</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <!--link to vedio player-->
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+</head>
+<body style="background-image: none; background-color: #000000;">
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg border-0 rounded-lg mt-5 bg-dark" style="--bs-bg-opacity: .5;">
+                <div class="card-body">
+                    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+   <!--Channel Link 1-->
+                    <video id="video" src="https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1655822854/ei/poWxYpnmH523z7sPxoWnwAo/ip/45.121.90.114/id/1lqwn_CLOis.1/source/yt_live_broadcast/requiressl/yes/hfr/1/playlist_duration/30/manifest_duration/30/maxh/2160/maudio/1/gcr/lk/spc/4ocVCwzsg3ZBr97e5PHFZymy_tM0BrHFtyweNhE4mYDY/vprv/1/go/1/pacing/0/nvgoi/1/keepalive/yes/fexp/24001373%2C24007246/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaxh%2Cmaudio%2Cgcr%2Cspc%2Cvprv%2Cgo%2Citag%2Cplaylist_type/sig/AOq0QJ8wRAIgY_PYPowznTX__FdzVBvzSYgXFYwCiIWR4whGaQcpdxICIEpSD-FT-6vOibp7lcPbq61sQp6U1POesnl0dEw8Y7pu/file/index.m3u8" controls width="100%" autoplay></video>
+                    <script>
+                        if(Hls.isSupported())
+                        {
+                            var video = document.getElementById('video');
+                            var hls = new Hls();
+   <!--Channel Link 2-->
+                            hls.loadSource('https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1655822854/ei/poWxYpnmH523z7sPxoWnwAo/ip/45.121.90.114/id/1lqwn_CLOis.1/source/yt_live_broadcast/requiressl/yes/hfr/1/playlist_duration/30/manifest_duration/30/maxh/2160/maudio/1/gcr/lk/spc/4ocVCwzsg3ZBr97e5PHFZymy_tM0BrHFtyweNhE4mYDY/vprv/1/go/1/pacing/0/nvgoi/1/keepalive/yes/fexp/24001373%2C24007246/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaxh%2Cmaudio%2Cgcr%2Cspc%2Cvprv%2Cgo%2Citag%2Cplaylist_type/sig/AOq0QJ8wRAIgY_PYPowznTX__FdzVBvzSYgXFYwCiIWR4whGaQcpdxICIEpSD-FT-6vOibp7lcPbq61sQp6U1POesnl0dEw8Y7pu/file/index.m3u8');
+                            hls.attachMedia(video);
+                            hls.on(Hls.Events.MANIFEST_PARSED,function()
+                            {
+                                video.play();
+                            });
+                        }
+                        else if (video.canPlayType('application/vnd.apple.mpegurl'))
+                        {
+   <!--Channel Link 3-->
+                            video.src = 'https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1655822854/ei/poWxYpnmH523z7sPxoWnwAo/ip/45.121.90.114/id/1lqwn_CLOis.1/source/yt_live_broadcast/requiressl/yes/hfr/1/playlist_duration/30/manifest_duration/30/maxh/2160/maudio/1/gcr/lk/spc/4ocVCwzsg3ZBr97e5PHFZymy_tM0BrHFtyweNhE4mYDY/vprv/1/go/1/pacing/0/nvgoi/1/keepalive/yes/fexp/24001373%2C24007246/dover/11/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaxh%2Cmaudio%2Cgcr%2Cspc%2Cvprv%2Cgo%2Citag%2Cplaylist_type/sig/AOq0QJ8wRAIgY_PYPowznTX__FdzVBvzSYgXFYwCiIWR4whGaQcpdxICIEpSD-FT-6vOibp7lcPbq61sQp6U1POesnl0dEw8Y7pu/file/index.m3u8';
+                            video.addEventListener('canplay',function()
+                            {
+                                video.play();
+                            });
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
